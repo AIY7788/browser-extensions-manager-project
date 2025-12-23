@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 1.8rem;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.header .logo {
+  height: 38px;
+}
+
+.switch-theme {
+  height: 42px;
+  width: 42px;
+  border-radius: 8px;
+  background-color: var(--neutral-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.switch-theme:hover {
+  background-color: var(--border);
+}
+
+.switch-theme #theme-toggle {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.switch-theme:has(#theme-toggle:checked) {
+  background-color: var(--neutral-700);
+}
+
+.switch-theme:has(#theme-toggle:checked):hover {
+  background-color: var(--border);
+}
+
+.switch-theme:has(#theme-toggle:focus-visible) {
+  outline: none;
+  background-color: var(--border);
+
+  box-shadow:
+    0 0 0 2px var(--bg),
+    0 0 0 4px var(--red-bg);
+
+}
+
+.switch-theme img {
+  height: 20px;
+}
+
+@media (min-width: 625px) {
+  .header {
+    margin-bottom: 2.5rem;
+  }
+}

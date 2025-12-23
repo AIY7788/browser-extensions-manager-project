@@ -1,0 +1,76 @@
+#root {
+  /* background-color: transparent; */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1068px;
+  padding: 1rem 0.8rem;
+  color: var(--text);
+}
+
+.extensions-list .container-filter {
+  margin-bottom: 2rem;
+}
+
+.container-filter h1 {
+  font-size: 1.7rem;
+  font-weight: var(--font-bold);
+  margin-bottom: 1rem;
+}
+
+.container-filter .filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.filter button {
+  color: var(--text);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-regular);
+  padding: 4px 14px;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.filter button:hover {
+  /* opacity: 0.4; */
+  background-color: var(--filter-hover);
+}
+
+.filter button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px var(--bg),
+    0 0 0 4px var(--red-bg);
+
+  background-color: var(--border);
+}
+
+.filter button.active {
+  background-color: var(--red-bg);
+  color: var(--filter-active-text);
+  border-color: var(--red-bg);
+}
+
+.filter button.active:hover {
+  opacity: 1;
+  background-color: var(--red-hover);
+}
+
+@media (min-width: 625px) {
+  .extensions-list .container-filter {
+    margin-bottom: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container-filter h1 {
+    margin-bottom: 0;
+  }
+}
