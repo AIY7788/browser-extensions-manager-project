@@ -12592,7 +12592,7 @@ function f1({ filter: _ }) {
       return Q ? JSON.parse(Q) : [];
     }),
     o = async () => {
-      const N = await (await fetch("./data.json")).json();
+      const N = await (await fetch("../data.json")).json();
       X(N), localStorage.setItem("extensionsData", JSON.stringify(N));
     };
   al.length === 0 && o(),
