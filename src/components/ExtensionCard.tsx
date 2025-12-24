@@ -65,7 +65,7 @@ export function ExtensionCard({ filter }: { filter: string }) {
   });
 
   return (
-    <div className="extensions-container">
+    <main className="extensions-container">
       {Array.isArray(filteredData) &&
         filteredData.length > 0 &&
         filteredData.map((extension) => {
@@ -104,6 +104,6 @@ export function ExtensionCard({ filter }: { filter: string }) {
             </div>
           );
         })}
-    </div>
+    </main>
   );
 }

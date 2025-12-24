@@ -20,7 +20,7 @@ export function Header() {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <img className="logo" src={logo} alt="" />
       <label className="switch-theme">
         <input
@@ -36,6 +36,6 @@ export function Header() {
           <img className="moon" src={icon_moon} alt="Icon moon" />
         )}
       </label>
-    </div>
+    </header>
   );
 }
