@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "logo": "/browser-extensions-manager-project/images/logo-devlens.svg",
+        "logo":"/browser-extensions-manager-project/images/logo-devlens.svg",
         "name": "DevLens",
         "description": "Quickly inspect page layouts and visualize element boundaries.",
         "isActive": true

@@ -16,7 +16,7 @@ export function ExtensionCard({ filter }: { filter: string }) {
   });
 
   const loadData = async () => {
-    const res = await fetch("/data.json");
+    const res = await fetch(import.meta.env.BASE_URL + "data.json");
     const data = await res.json();
 
     setData(data);
