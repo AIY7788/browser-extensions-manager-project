@@ -1,7 +1,7 @@
 import icon_moon from "/icon-moon.svg";
 import icon_sun from "/icon-sun.svg";
-import logo_light from "/logo-light.png";
-import logo_dark from "/logo-dark.png";
+import logo_light from "/logo-light.svg";
+import logo_dark from "/logo-dark.svg";
 import { useState, useEffect } from "react";
 import "./Header.css";
 
