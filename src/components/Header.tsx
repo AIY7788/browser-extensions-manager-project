@@ -1,6 +1,7 @@
 import icon_moon from "/icon-moon.svg";
 import icon_sun from "/icon-sun.svg";
-import logo from "/logo.svg";
+import logo_light from "/logo-light.png";
+import logo_dark from "/logo-dark.png";
 import { useState, useEffect } from "react";
 import "./Header.css";
 
@@ -21,7 +22,9 @@ export function Header() {
 
   return (
     <header className="header">
-      <img className="logo" src={logo} alt="" />
+      {theme === "light" && <img className="logo" src={logo_light} alt="" />}
+      {theme === "dark" && <img className="logo" src={logo_dark} alt="" />}
+
       <label className="switch-theme">
         <input
           checked={theme === "dark"}
